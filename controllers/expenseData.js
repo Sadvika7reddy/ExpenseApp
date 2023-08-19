@@ -5,9 +5,9 @@ exports.postAddDetails=async (req,res,next)=>{
             throw new Error('amount is mandotory')
         }
         const amount=req.body.amount;
-        const category=req.body.category;
-        const discription=req.body.discription
-        const data=await Expenses.create({amount:amount,category:category,discription:discription})
+        const table=req.body.table;
+        const dish=req.body.dish
+        const data=await Expenses.create({amount:amount,table:table,dish:dish})
         res.status(201).json({newExpensesDetails:data})
     }
     catch(err){

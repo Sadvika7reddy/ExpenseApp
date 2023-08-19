@@ -13,11 +13,11 @@ const Expenses=sequelize.define('expenses',{
     type:Sequelize.DOUBLE,
     allowNull:false
   },
-  category:{
+  table:{
     type:Sequelize.STRING,
     allowNull:false
   },
-  discription:{
+  dish:{
     type:Sequelize.STRING,
     allowNull:false
   }
